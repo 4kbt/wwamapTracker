@@ -1,0 +1,7 @@
+This repo is designed to periodically archive the map found at https://www.weather.gov/wwamap/png/US.png 
+
+Archives of that image are found in data/ . 
+
+The script used to do the archiving is found in runWWAMap.sh . It is most-likely executed by a cron-job on Charlie's desktop.
+
+Enjoy.

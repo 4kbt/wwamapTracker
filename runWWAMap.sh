@@ -18,4 +18,4 @@ timestamp(){
 
 git commit -am "Auto Server Commit $(timestamp)"
 
-git push --repo https://4kbt:`cat wwaAccessToken.txt`@github.com/4kbt/trmnlNWAC.git 
+git push --repo https://4kbt:`cat wwaAccessToken.txt`@github.com/4kbt/wwamapTracker.git 

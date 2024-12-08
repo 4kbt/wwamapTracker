@@ -8,4 +8,4 @@ rm $OUT
 # cat may not handle large numbers of files appropriately -- a fix for a
 # future time.
 
-cat data/*.png | ffmpeg -f image2pipe -framerate 5 -i - $OUT
+cat data/*.png | ffmpeg -f image2pipe -framerate 10 -i - $OUT

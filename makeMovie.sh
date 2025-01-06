@@ -12,4 +12,4 @@ rm $OUT
 
 ls -lh data | awk '{if( $5 > 0) print $9}' | sed "s:^:file data/:" > movieRecipe.txt
 
-ffmpeg -safe 0 -f concat -r 24 -i movieRecipe.txt out.mp4
+ffmpeg -safe 0 -f concat -r 24 -i movieRecipe.txt $OUT 

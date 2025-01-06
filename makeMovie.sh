@@ -8,4 +8,8 @@ rm $OUT
 # cat may not handle large numbers of files appropriately -- a fix for a
 # future time.
 
-cat data/*.png | ffmpeg -f image2pipe -framerate 10 -i - $OUT
+#cat data/*.png | ffmpeg -f image2pipe -framerate 10 -i - $OUT
+
+ls -lh data | awk '{if( $5 > 0) print $9}' | sed "s:^:file data/:" > movieRecipe.txt
+
+ffmpeg -safe 0 -f concat -r 24 -i movieRecipe.txt out.mp4
